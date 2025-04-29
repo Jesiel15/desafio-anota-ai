@@ -81,7 +81,7 @@ src/
 - ✅ Estilização visual fiel ao layout proposto (imagem e vídeo)
 - ✅ Layout responsivo
 - ✅ Estrutura SCSS organizada
-- 🔁 Testes unitários com Karma e Jasmine
+- ✅ Testes unitários com Karma e Jasmine
 
 ---
 
