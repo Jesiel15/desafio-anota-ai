@@ -52,21 +52,34 @@
   transform: scale(1.03);
   z-index: 10;
 }
-
 .delete-button {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  background: transparent;
-  border: none;
-  padding: 5px;
-  z-index: 3;
+  top: -15px;
+  right: -15px;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  background: rgb(252, 252, 252);
+  padding: 6px;
+  cursor: pointer;
+  transition: border-color 0.3s;
 
-  .icon-close {
-    height: 50px;
+  img {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s, filter 0.3s;
   }
 
   &:hover {
-    opacity: 0.8;
+    width: 46px;
+    height: 46px;
+  }
+
+  &:hover img {
+    transform: rotate(90deg);
+    filter: invert(20%) sepia(100%) saturate(10000%);
+    width: 30px;
+    height: 30px;
   }
 }
