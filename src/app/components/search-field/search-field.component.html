@@ -1,6 +1,11 @@
-<form class="search-form" (submit)="onSearch()">
+<form class="search-form">
   <div class="container-lupa">
-    <input type="search" [(ngModel)]="search" name="search" />
+    <input
+      type="search"
+      [(ngModel)]="search"
+      name="search"
+      (input)="onSearch()"
+    />
     <button type="submit" aria-label="Buscar">
       <img src="../../../assets/lupa.png" alt="Buscar" class="icon" />
     </button>
