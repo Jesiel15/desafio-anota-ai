@@ -8,9 +8,12 @@ import { CardModel } from './model/card.model';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  @Input() set infoCard(info: CardModel[]) {
-    if (info) {
-      console.log('Info', info);
+  card = new CardModel();
+
+  @Input() set infoCard(card: CardModel) {
+    if (card) {
+      console.log('Info', card);
+      this.card = card;
     }
   }
 }

@@ -12,14 +12,14 @@ import { CardModel } from '../components/card/model/card.model';
   imports: [CommonModule, CardComponent],
 })
 export class HomeComponent implements OnInit {
-  cards = new Array<CardModel>()
+  listCards = new Array<CardModel>()
   constructor(private _homeService: HomeService) {}
 
   ngOnInit(): void {
     console.log('teste ngOnInit');
     this._homeService.getCards().subscribe((data: any[]) => {
       console.log('Cards recebidos:', data);
-      this.cards = data;
+      this.listCards = data;
     });
   }
 }
