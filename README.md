@@ -1,27 +1,134 @@
-# DesafioAnotaAi
+# Desafio Anota AI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.16.
+Este projeto foi desenvolvido como parte de um desafio técnico para vaga de Front-end na **Anota AI**. A proposta era replicar uma interface com fidelidade visual, utilizando Angular 2+ (preferencialmente versão 17+), sem uso de bibliotecas de componentes como Bootstrap ou Angular Material, focando em **HTML, CSS puro e boas práticas de arquitetura front-end**.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Tecnologias Utilizadas
 
-## Code scaffolding
+- [Angular 17](https://angular.io/) – Framework principal
+- [TypeScript](https://www.typescriptlang.org/) – Superset do JavaScript utilizado com Angular
+- [SCSS](https://sass-lang.com/) – Pré-processador CSS utilizado no projeto
+- [Jasmine/Karma](https://karma-runner.github.io/) – Ferramentas utilizadas para testes unitários
+- [VS Code](https://code.visualstudio.com) - Editor de código leve e poderoso com suporte a extensões
+- [Vercel](https://vercel.com/) - Usado para hospedagem para aplicações web
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 📋 Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Antes de rodar o projeto, certifique-se de ter instalado:
 
-## Running unit tests
+```
+Node.js v20.9.0
+Angular CLI v17.3.12
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🔧 Instalação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone o repositório e instale as dependências:
 
-## Further help
+```bash
+git clone https://github.com/Jesiel15/desafio-anota-ai.git
+cd desafio-anota-ai
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## 📂 Estrutura do Projeto
+
+Este projeto utiliza uma arquitetura baseada em módulos e componentes organizados por funcionalidade. Os estilos foram construídos em SCSS, com separação por responsabilidades e sem uso de bibliotecas externas.
+
+```bash
+src/
+├── app/
+│   ├── components/               # Componentes reutilizáveis
+│   │   ├── card/                 # Componente de cartão de exibição
+│   │   ├── header/               # Cabeçalho da aplicação
+│   │   └── search-field/         # Campo de busca reutilizável
+│   ├── home/                     # Página inicial e lógica associada
+│   ├── shared/                   # Recursos compartilhados (enums, pipes, etc.)
+│   │   └── card.enum.ts          # Enum utilizado por múltiplos componentes
+│   ├── app.component.html        # Template principal da aplicação
+│   ├── app.component.scss        # Estilos do componente raiz
+│   ├── app.component.spec.ts     # Testes do componente raiz
+│   ├── app.component.ts          # Componente raiz da aplicação
+│   ├── app.config.ts             # Configurações globais
+│   └── app.routes.ts             # Definições de rotas da aplicação
+├── assets/                       # Arquivos estáticos (imagens, ícones)
+│   ├── .gitkeep
+│   ├── close.svg
+│   ├── favicon.png
+│   ├── logo-anota-ai.png
+│   └── lupa.png
+├── index.html                    # HTML principal da aplicação
+├── main.ts                       # Ponto de entrada da aplicação
+├── styles.scss                   # Estilos globais
+
+```
+
+---
+
+## 🖼️ Funcionalidades Implementadas
+
+- ✅ Criação de cabeçalho (Header)
+- ✅ Listagem dinâmica de cards via HTTP GET
+- ✅ Filtro de cards por título ou descrição
+- ✅ Exclusão de cards via ação do usuário
+- ✅ Estilização visual fiel ao layout proposto (imagem e vídeo)
+- ✅ Layout responsivo
+- ✅ Estrutura SCSS organizada
+- 🔁 Testes unitários com Karma e Jasmine
+
+---
+
+## 🔍 Como rodar o projeto
+
+Após a instalação:
+
+```bash
+npm start
+```
+
+Acesse em: `http://localhost:4200`
+
+---
+
+## 🧪 Testes Unitários
+
+Para executar os testes automatizados:
+
+```bash
+npm test
+```
+
+Os testes estão escritos com Jasmine e executados via Karma.
+
+---
+
+## ✒️ Autor
+
+- **Jesiel Faria** – 📎 [github.com/Jesiel15](https://github.com/Jesiel15)
+
+---
+
+## 🎥 Referência Visual
+
+- 📸 [Mock da interface](https://githubanotaai.github.io/frontend-interview-mock-data/teste/Test-front-anota-ai.jpg)
+- 🎬 [Vídeo da animação](https://githubanotaai.github.io/frontend-interview-mock-data/teste/Test-front-anota-ai.webm)
+
+- 📄 [Enpoint da lista dos cards](https://githubanotaai.github.io/frontend-interview-mock-data/cardlist.json)
+
+---
+
+## 🎁 Expressões de gratidão
+
+- Esse projeto foi um desafio proposto a uma vaga de emprego frontend 📢;
+- Agradeço a Anota Aí pela oportunidade;
+
+---
+
+⌨️ com ❤️ por [Jesiel Faria](https://github.com/Jesiel15) 😊
