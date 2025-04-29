@@ -1,14 +1,23 @@
 .card {
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
-  box-sizing: border-box;
   height: 100%;
   margin: 10px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  z-index: 1;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.category-label {
+  position: absolute;
+  top: 170px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 2;
 }
 
 .card-image {
