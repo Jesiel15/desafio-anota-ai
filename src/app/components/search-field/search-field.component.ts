@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -11,7 +11,9 @@ import { FormsModule } from '@angular/forms';
 export class SearchFieldComponent {
   search: string = '';
 
+  @Output() searchText = new EventEmitter<string>();
+
   onSearch() {
-    console.log('Buscando por:', this.search);
+    this.searchText.emit(this.search);
   }
 }
