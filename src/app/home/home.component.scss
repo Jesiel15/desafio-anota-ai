@@ -1,13 +1,18 @@
+app-card {
+  flex: 1 1 calc(16.66% - 5px);
+  box-sizing: border-box;
+}
+
 .container-card {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
   justify-content: flex-start;
   margin-bottom: 20px;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
-app-card {
-  flex: 1 1 calc(16.66% - 5px);
-  box-sizing: border-box;
+.container-search-field {
+  justify-content: center;
+  margin-top: 4%;
 }
