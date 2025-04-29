@@ -106,6 +106,21 @@ npm test
 ```
 
 Os testes estão escritos com Jasmine e executados via Karma.
+Para visualizar o Coverage, acesso arquivo e copie o **Resource Path**
+
+---
+
+Caminho do index.html do **coverage** na raiz do projeto.
+
+```bash
+coverage\desafio-anota-ai\index.html
+```
+
+Vai ficar mais ou menos assim, depois cole no navegador.
+
+```bash
+D:\Arquivos de Programas\desafio-anota-ai\coverage\desafio-anota-ai\index.html
+```
 
 ---
 
