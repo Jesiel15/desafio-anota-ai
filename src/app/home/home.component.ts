@@ -29,19 +29,23 @@ export class HomeComponent implements OnInit {
   receiveSearch(textSearch: string): void {
     const search = textSearch.trim().toLowerCase();
 
-    if (!search) {
-      this.filteredCards = [...this.listCards];
-      return;
-    }
+    this.filteredCards = this.listCards.filter((card) => {
+      if (card.removed) {
+        return false;
+      }
+      if (!search) {
+        return true;
+      }
 
-    this.filteredCards = this.listCards.filter(
-      (card) =>
+      return (
         card.title.toLowerCase().includes(search) ||
         card.description.toLowerCase().includes(search)
-    );
+      );
+    });
   }
 
   removeCard(index: number) {
-    this.filteredCards.splice(index, 1);
+    this.filteredCards[index].removed = true;
+    this.receiveSearch('');
   }
 }

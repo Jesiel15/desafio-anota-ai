@@ -3,4 +3,5 @@ export class CardModel {
   description!: string;
   img!: string;
   type!: number;
+  removed!: boolean;
 }
