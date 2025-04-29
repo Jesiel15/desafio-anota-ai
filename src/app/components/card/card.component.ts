@@ -15,7 +15,6 @@ export class CardComponent {
 
   @Input() set infoCard(card: CardModel) {
     if (card) {
-      console.log('Info', card);
       this.card = card;
     }
   }
