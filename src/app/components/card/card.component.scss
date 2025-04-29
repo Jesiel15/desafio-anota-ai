@@ -1,26 +1,44 @@
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 16px;
   background-color: #f9f9f9;
   box-sizing: border-box;
   height: 100%;
   margin: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .card-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   margin-bottom: 10px;
 }
 
 .card h3 {
-  font-size: 18px;
+  padding-left: 16px;
+  font-size: 32px;
+  margin: 0;
 }
 
-p {
-  font-size: 16px;
+.card-description {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  padding-left: 16px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  z-index: 10;
 }
