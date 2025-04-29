@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CardModel } from './model/card.model';
 import { CardColorMap, CardEnum } from '../../shared/card.enum';
 import { CommonModule } from '@angular/common';
@@ -18,6 +18,12 @@ export class CardComponent {
       console.log('Info', card);
       this.card = card;
     }
+  }
+
+  @Output() removeCard = new EventEmitter<void>();
+
+  deleteCard() {
+    this.removeCard.emit();
   }
 
   getCardName(): string {

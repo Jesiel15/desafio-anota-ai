@@ -40,4 +40,8 @@ export class HomeComponent implements OnInit {
         card.description.toLowerCase().includes(search)
     );
   }
+
+  removeCard(index: number) {
+    this.filteredCards.splice(index, 1);
+  }
 }

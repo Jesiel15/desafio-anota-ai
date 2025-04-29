@@ -52,3 +52,21 @@
   transform: scale(1.03);
   z-index: 10;
 }
+
+.delete-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  z-index: 3;
+
+  .icon-close {
+    height: 50px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,4 +1,8 @@
 <div class="card">
+  <button class="delete-button" (click)="deleteCard()">
+    <img src="assets/close.svg" alt="Excluir" class="icon-close" />
+  </button>
+
   <div
     class="category-label"
     [ngStyle]="{ 'background-color': getCardColor() }"
