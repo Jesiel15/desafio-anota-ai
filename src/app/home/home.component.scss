@@ -1,0 +1,20 @@
+app-card {
+  flex: 0 0 300px;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  row-gap: 30px;
+  margin-top: 2%;
+  margin-bottom: 20px;
+}
+
+.container-search-field {
+  justify-content: center;
+  margin-top: 4%;
+}

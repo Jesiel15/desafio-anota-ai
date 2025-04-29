@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="container-search-field">
+  <app-search-field (searchText)="receiveSearch($event)"></app-search-field>
+</div>
+<div class="container-card">
+  <app-card
+    *ngFor="let card of filteredCards; let i = index"
+    [infoCard]="card"
+    (removeCard)="removeCard(i)"
+  ></app-card>
+</div>
